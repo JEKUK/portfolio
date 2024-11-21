@@ -1,1 +1,156 @@
-# potfolio
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <title>김제국의 포트폴리오입니다.</title>
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li date-menuanchor="section1"><a href="#section1">Portfolio</a></li>
+        <li date-menuanchor="section2"><a href="#section2">About Me</a></li>
+        <li date-menuanchor="section3"><a href="#section3"></a></li>
+        <li date-menuanchor="section4"><a href="#section4">Skill</a></li>
+        <li date-menuanchor="section5"><a href="#section5">Project</a></li>
+        <li date-menuanchor="section6"><a href="#section6">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main id="fullpage">
+    <section class="section">
+      <div class="intro">
+        <div class="textbox">
+          <h1>Web Designer</h1>
+          <h1>Kim Je KuK</h1>
+          <p class="flicker-2">introduce start!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="introduce">
+
+        <div class="textbox">
+          <h1 class="flicker-2">ABOUT ME</h1>
+        </div>
+        <div class="textbox">
+
+        </div>
+        <div class="profile1">
+          <img src="images/introduce2.jpg" alt="자기사진">
+        </div>
+        <div class="selfintro">
+          <div id="movpic"></div>
+          <div class="education">
+            <h1 class="month">Education</h1>
+            <p class="month">2018~2024</p>
+            <p class="write">충북대학교 졸업<br>
+              환경생명화학과 전공</p>
+            <p class="month">2024</p>
+            <p class="write">DW/아카데미 <br>
+              웹디자인 UI/UX 디자인 교육과정 수료</p>
+          </div>
+
+          <div class="cretificates">
+            <h1 class="month">Cretificates</h1>
+            <p class="month">2024</p>
+            <p class="write">컴퓨터 그래픽스 필기
+            <p class="month">2024</p>
+            <p class="write">웹디자인 기능사 필기
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section">
+      <div class="introduce2">
+        <div class="profile2 ">
+          <img src="images/introduce.jpg" alt="자기사진">
+        </div>
+        <div class="textbox">
+          <p>안녕하세요,신입 웹 디자이너 김제국입니다.<br>
+            자유로운 생각을 풀어나갈 수 있는 온라인 공간이<br>
+            저를 이 매력적인 직업으로 이끌었습니다.<br>
+            자유에는 책임이 따른다는 말을 좋아합니다.
+            온라인 공간에서도 상상을 자유롭게 구현 할 수 있지만,
+            그만큼 책임도 크다고 생각합니다.
+            언제나 책임감을 가지고 자유로이 풀어나가는
+            웹디자이너가 되겠습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="skill">
+        <div class="textbox">
+          <h1 class="flicker-2">SKILL</h1>
+        </div>
+
+        <div class="coverbox">
+          <div class="cover">
+            <p class="first-parallel"></p>
+          </div>
+          <div class="cover">
+            <p class="second-parallel"></p>
+          </div>
+          <div class="cover">
+            <p class="third-parallel"></p>
+          </div>
+          <div class="cover">
+            <p class="forth-parallel"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="Project">
+        <div class="textbox">
+          <h1 class="flicker-2">PROJECT</h1>
+        </div>
+        <div class="slide" data-anchor="slide1">
+          <div class="projectbox">
+            <img src="images/project2.jpg" alt="프로잭트 이미지2">
+            <span class="sub1">다양한 이미지와 사각형 레이아웃을 이용하여<br>
+              오뚜기 홈페이지를 리디자인했습니다. </span>
+            <span class="link"><a href="오뚜기/ottogi.html">바로가기</a></span>
+          </div>
+        </div>
+        <div class="slide" data-anchor="slide2">
+          <div class="projectbox">
+            <img src="images/project1.jpg" alt="프로잭트 이미지1">
+            <span class="sub2">ux/ui를 고려하여 세종문화회관 홈페이지를<br>
+              리디자인했습니다. </span>
+            <span class="link"><a href="sejong/sejong.html">바로가기</a></span>
+          </div>
+        </div>
+        <div class="slide" data-anchor="slide3">
+          <div class="projectbox"> </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section fp-auto-height">
+      <h1>제 포트폴리오를 읽어주셔서 감사합니다!</h1>
+      <i class="fa-solid fa-phone"></i>
+      <p>Phone Number:010-8918-7342</p>
+      <i class="fa-regular fa-envelope"></i>
+      <p>e-mail:pp990313@naver.com</p>
+      <a href="https://www.instagram.com/jekuk.kim/"><i class="fa-brands fa-instagram"></i></a>
+      <p><a href="https://www.instagram.com/jekuk.kim/">instagram</a></p>
+      <p>Jekuk Portfolio ⓒ all right reserved</p>
+    </footer>
+
+  </main>
+  
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/5ffde0f5e7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
