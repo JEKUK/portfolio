@@ -1,0 +1,513 @@
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+    list-style: none;
+
+    @media (max-width:768px) {
+        margin: 0 10px;
+        
+    }
+}
+
+header nav ul li a {
+    list-style: none;
+    font-family: 'DungGeunMo';
+    font-size: 1.3em;
+    color: #fff;
+
+    @media (max-width:768px) {
+     font-size: 0.9em;   
+    }
+}
+
+header nav ul li:nth-child(3) {
+    margin: 0;
+}
+
+/* introduce */
+
+.intro {
+    width: 100%;
+    height: 90%;
+    background-color: #3988ff;
+}
+
+.intro .textbox {
+    width: 100%;
+    height: 90%;
+}
+
+.textbox h1 {
+    font-family: 'NeoDunggeunmo';
+    font-size: 160px;
+
+    @media (max-width:768px) {
+        font-size: 60px;   
+       }
+}
+
+.textbox p {
+    font-family: 'DungGeunMo';
+}
+
+.intro .textbox h1:nth-child(1) {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    
+}
+
+.intro .textbox h1:nth-child(2) {
+    position: absolute;
+    top: 48%;
+    right: 5%;
+}
+
+
+.intro .textbox p {
+    font-size: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+
+    @media (max-width:768px) {
+          font-size: 20px;
+          left: 35%;
+       }
+}
+
+.introduce .textbox h1{
+    position: absolute;
+    left: 35%;
+    top: 5%;
+
+    @media (max-width:768px) {
+        left: 28%;  
+        top: 7%; 
+       }
+}
+
+
+.introduce {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.selfintro{
+    width: 50%;
+    height: 75%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    @media (max-width:768px) {
+        width: 90%;    
+        
+    }
+}
+
+
+.education{
+    width: 50%;
+    height: 30%;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 20px;
+    
+    @media (max-width:768px) {
+        font-size: 0.8em;   
+       }
+}
+
+.education .month{
+    position: relative;
+    top: 13%;
+    font-family: 'NeoDunggeunmo' ;
+    margin-top: 30px;
+
+    @media (max-width:768px) {
+        font-size: 14px;   
+        top: 15%;
+        left: 15%;
+       }
+}
+
+.education .write{
+    position: relative;
+    top: 5%;
+    left: 40%;
+    font-family:  'NeoDunggeunmo';
+
+
+    @media (max-width:768px) {
+        font-size: 0.7em;   
+        left: 60%;
+
+       }
+}
+
+
+.cretificates{
+    width: 50%;
+    height: 30%;
+    font-size: 1.3em;
+    color: #fff;
+    padding: 20px;
+}
+
+.cretificates .month{
+    position: relative;
+    top: 13%;
+    font-family: 'NeoDunggeunmo' ;
+    margin-top: 30px;
+
+    @media (max-width:768px) {
+        font-size: 14px;   
+        top: 25%;
+        left: 15%;
+       }
+}
+
+.cretificates .write{
+    position: relative;
+    top: 5%;
+    left: 30%;
+    font-family:  'NeoDunggeunmo';
+
+    @media (max-width:768px) {
+        font-size: 0.5em;   
+        left: 60%;
+        top: 16%;
+       }
+
+}
+
+
+.profile1 {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    @media (max-width:768px) {
+        opacity: 0;
+    }
+}
+
+.profile1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 1px rgba(0,0,0,0.6);
+}
+
+
+.profile2 {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    @media (max-width:768px) {
+        width: 50%;
+        height: 50%;
+        left: 20%;
+        top: 20%;
+       }
+}
+
+
+.profile2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 1px rgba(0,0,0,0.6);
+}
+
+#movpic {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#movpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: none; 
+    opacity: 0.8;
+}
+
+.introduce2 .textbox {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+    @media (max-width:768px) {
+        top: 60%;    
+    }
+
+}
+
+
+
+.introduce2 .textbox p {
+    font-size: 30px;
+    line-height: 75px;
+    position: absolute;
+    top: 0%;
+
+    @media (max-width:768px) {
+        font-size: 0.6em;
+        line-height: 15px;
+        color: #fff;
+           }
+}
+
+
+
+
+/* skill */
+
+.skill {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.skill .textbox {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    @media (max-width:768px) {
+        left: 37%;
+        top: 7%; 
+       }
+}
+
+
+.cover {
+    width: 100%;
+    margin-bottom: 5vw;
+    display: flex;
+    box-shadow:1px 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.cover:nth-child(1) {
+    margin-top: 5vh;
+    transform: rotate(-2deg);
+    background-color: #ff3796;
+}
+
+.cover:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: #ecfe04;
+    justify-content: flex-end;
+}
+
+.cover:nth-child(3) {
+    transform: rotate(-2deg);
+    background-color: #5800ff;
+}
+
+.cover:nth-child(4) {
+    transform: rotate(2deg);
+    background-color: #33ff33;
+    justify-content: flex-end;
+}
+
+.cover p {
+    font-size: 70px;
+    font-family: 'NeoDunggeunmo';
+}
+
+.coverbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+}
+
+/* project */
+
+
+.Project .textbox {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    
+    @media (max-width:768px) {
+        left: 32%;
+        top: 7%; 
+       }
+}
+
+.Project .projectbox {
+    width: 50%;
+    height: 50%;
+    background-color: #000;
+    margin-left: 25%;
+
+}
+
+.Project .projectbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Project .projectbox:hover img {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.Project .projectbox .sub1 {
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+
+    @media (max-width:768px) {
+        font-size: 0.7em;
+        line-height: 15px;
+        left: 10%;
+           }
+}
+
+
+.Project .projectbox .sub2 {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+
+    @media (max-width:768px) {
+        font-size: 0.7em;
+        line-height: 15px;
+        left: 43%;
+           }
+}
+
+ 
+
+
+.Project .projectbox a {
+    color: #fff;
+    padding: 5px;
+}
+
+
+.Project .projectbox:hover span {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.Project .projectbox:hover span a {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.link{
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: 1px solid#fff;
+    position: relative;
+    left: 42%;
+    bottom: 30%;
+    opacity: 0;
+    
+    @media (max-width:768px) {
+        font-size: 0.7em;
+           }
+}
+
+/* footer */
+footer{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+footer h1{
+    font-family: 'NeoDunggeunmo';
+    margin-left: 10%;
+
+    @media (max-width:768px) {
+        font-size: 20px;    
+    }
+}
+
+footer p{
+    margin-left: 11.5%;
+    margin-top: 20px;
+    @media (max-width:768px) {
+    font-size: 12px;    
+    }
+}
+
+footer p:nth-last-child(1){
+margin-left: 10%;
+}
+
+
+footer i{
+    position: absolute;
+    margin-top: 25px;
+    left: 10%;
+    @media (max-width:768px) {
+        font-size: 0.8em;    
+        left: 7%;
+    }
+}
+
+footer a{
+    color: #fff;
+}

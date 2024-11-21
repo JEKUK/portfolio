@@ -1,0 +1,1363 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: 'SBAggroB';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+
+   margin: 0 auto;
+   padding: 0;
+   list-style: none;
+   font-family: "맑은 고딕";
+   color: #333;
+
+}
+
+html,
+body {
+   min-width: 1200px;
+   overflow-x: hidden;
+}
+
+a {
+   text-decoration: none;
+   display: block;
+}
+
+
+
+.wrap {
+   position: relative;
+   background-color: #ffffff;
+   height: 600vh;
+   width: 1890px;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+/* header */
+
+header {
+   width: 100%;
+   height: 3%;
+   position: relative;
+}
+
+
+.rectangle1 {
+   height: 90%;
+   width: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+.menu {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.logo {
+   width: 10%;
+   height: 30%;
+   background-image: url(../images/logo.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   position: absolute;
+   left: 3.3%;
+   top: 35%;
+}
+
+.gnb {
+   width: 70%;
+   height: 100%;
+   position: absolute;
+
+   left: 15%;
+}
+
+.gnb>li {
+   float: left;
+   width: 15%;
+   height: 100%;
+}
+
+.gnb>li>a {
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 150px;
+}
+
+.submenu {
+   visibility: hidden;
+   /* 기본 숨김 상태 */
+   opacity: 0;
+   transition: opacity 0.5s ease;
+   position: absolute;
+   background-color: #fff;
+   padding: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   top: 70%;
+}
+
+.gnb li:hover .submenu {
+   visibility: visible;
+   /* 호버 시 보이도록 설정 */
+   opacity: 1;
+}
+
+.submenu>li {
+   width: 100%;
+   height: 30%;
+   text-align: center;
+   padding: 10px 0px;
+   opacity: 0.7;
+
+}
+
+
+
+.submenu>li>a {
+   width: 180px;
+   font-weight: 600;
+}
+
+.submenu>li:hover a {
+   opacity: 1;
+   color: red;
+}
+
+.asidemenu {
+   width: 20%;
+   height: 100%;
+   position: absolute;
+   right: 3%;
+   top: 10%;
+}
+
+.asidemenu i {
+   font-size: 1.2em;
+   cursor: pointer;
+}
+
+.asidemenu i:nth-child(1) {
+   position: absolute;
+   left: 5%;
+   top: 32%;
+   color: red;
+}
+
+.asidemenu i:nth-child(2) {
+   position: absolute;
+   left: 20%;
+   top: 32%;
+   font-size: 1.3em;
+   color: red;
+}
+
+
+.asidemenu i:nth-child(3) {
+   position: absolute;
+   left: 35%;
+   top: 32%;
+   font-size: 1.3em;
+   color: red;
+}
+
+
+/* main */
+
+.info {
+   width: 100%;
+   height: 20%;
+   position: relative;
+}
+
+.rectangle2 {
+   background-color: #d9d9d9;
+   height: 70%;
+   width: 95%;
+   top: -2%;
+   left: 60px;
+   position: absolute;
+   z-index: 1;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+   margin-top: 10px;
+}
+
+.rectangle2 video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+}
+
+
+.rectangle3 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+   top: 70%;
+   left: 3.3%;
+   position: absolute;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info .rectangle3 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 2;
+   opacity: 0.7;
+}
+
+.info .rectangle3:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+.rectangle3 span {
+   position: absolute;
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+   top: 35%;
+   left: 5%;
+   z-index: 3;
+   opacity: 1;
+   font-family: 'SBAggroB';
+}
+
+.rectangle4 {
+   background-color: #000;
+   height: 35%;
+   width: 46.4%;
+   top: 70%;
+   left: 27.5%;
+   position: absolute;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info .rectangle4:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+}
+
+
+.info .rectangle4 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.7;
+   z-index: 2;
+}
+
+.rectangle4 span {
+   position: absolute;
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+   left: 28%;
+   top: 25%;
+   opacity: 1;
+   z-index: 3;
+   font-family: 'SBAggroB';
+}
+
+
+.rectangle5 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+   top: 70%;
+   left: 75%;
+   position: absolute;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info .rectangle5:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+   cursor: pointer;
+}
+
+
+.info .rectangle5 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.7;
+   z-index: 2;
+
+}
+
+
+.rectangle5 span {
+   position: absolute;
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+   left: 5%;
+   top: 35%;
+   z-index: 3;
+   opacity: 1;
+   font-family: 'SBAggroB';
+}
+
+
+
+
+/* section2 */
+.global {
+   width: 100%;
+   height: 20%;
+   position: relative;
+   top: 2%;
+}
+
+
+.rectangle6 {
+   height: 35%;
+   width: 23.2%;
+   top: 0%;
+   left: 51%;
+   position: absolute;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.global .rectangle6>span {
+   font-size: 30px;
+   font-weight: bold;
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   color: #000;
+   font-family: 'SBAggroB';
+}
+
+.global .rectangle6>span:nth-of-type(2) {
+   color: red;
+   top: 32%;
+}
+
+.global .rectangle6>span:nth-of-type(3) {
+   font-size: 14px;
+   top: 52%;
+   font-weight: normal;
+   font-family: 'arial';
+}
+
+.rectangle7 {
+   background-color: #000;
+   width: 46%;
+   height: 71%;
+
+   top: 0%;
+   left: 3.3%;
+   position: absolute;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle7 video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rectangle8 .textbox {
+   width: 70%;
+   height: 50%;
+   position: absolute;
+   font-size: 30px;
+   color: #fff;
+   font-family: 'SBAggroB';
+   top: 30%;
+   left: 15%;
+
+}
+
+.textbox strong {
+   font-family: 'SBAggroB';
+   color: red;
+}
+
+.textbox span {
+   font-size: 12px;
+   font-family: 'arial';
+   font-weight: normal;
+   color: #fff;
+}
+
+
+.st:hover {
+   opacity: 0;
+   transition: 0.3s ease-out;
+}
+
+
+.last {
+   opacity: 0.6;
+}
+
+.rectangle8 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+   top: 0%;
+   left: 75%;
+   position: absolute;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle8>i {
+   font-size: 30px;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: red;
+}
+
+.rectangle8>i:hover {
+   transform: translateX(30px) scaleX(1.2);
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+
+.rectangle8 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+}
+
+.rectangle9 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+   top: 36%;
+   left: 75%;
+   position: absolute;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle9>i {
+   font-size: 30px;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: red;
+}
+
+.rectangle9>i:hover {
+   transform: translateX(30px) scaleX(1.2);
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+
+.rectangle9 .textbox {
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   font-size: 30px;
+   font-family: 'SBAggroB';
+   top: 30%;
+   left: 15%;
+   color: #fff;
+}
+
+
+.st:hover {
+   opacity: 0;
+   transition: 0.3s ease-out;
+}
+
+
+.last {
+   opacity: 0.6;
+}
+
+
+.rectangle9 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+}
+
+.rectangle10 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+   top: 36%;
+   left: 51%;
+   position: absolute;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle10>i {
+   font-size: 30px;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: red;
+}
+
+.rectangle10>i:hover {
+   transform: translateX(30px) scaleX(1.2);
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+
+.rectangle10 .textbox {
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   font-size: 30px;
+   font-family: 'SBAggroB';
+   top: 30%;
+   left: 10%;
+   color: #fff;
+}
+
+
+.st:hover {
+   opacity: 0;
+   transition: 0.3s ease-out;
+}
+
+
+.last {
+   opacity: 0.6;
+}
+
+.rectangle10 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+}
+
+/* section3 */
+.brandstory {
+   width: 100%;
+   height: 20%;
+   position: relative;
+   margin-top: -8%;
+}
+
+.rectangle11 {
+   background-color: #000;
+   width: 46%;
+   height: 71%;
+   border-radius: 30px;
+   top: 0%;
+   left: 52.5%;
+   position: absolute;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle11>i {
+   font-size: 30px;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: yellow;
+}
+
+.rectangle11>i:hover {
+   transform: translateX(30px) scaleX(1.2);
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.rectangle11 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.rectangle11>span {
+   font-size: 140px;
+   font-weight: bold;
+   color: yellow;
+   position: absolute;
+   left: 4%;
+   top: 20%;
+}
+
+.rectangle11>span:nth-child(2) {
+   font-size: 80px;
+   top: 40%;
+   left: 6%;
+}
+
+.rectangle11>span:nth-child(3) {
+   font-size: 40px;
+   left: 62%;
+   top: 47%;
+
+}
+
+.rectangle11>span:nth-child(4) {
+   font-size: 16px;
+   left: 7%;
+   top: 57%;
+   color: #fff;
+   font-weight: normal;
+   font-family: 'arial';
+}
+
+.rectangle12 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 0%;
+   left: 3.3%;
+   position: absolute;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle12 img {
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   object-fit: cover;
+}
+
+.rectangle12:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+}
+
+.brandstory .textbox>h1 {
+   color: #fff;
+}
+
+.rectangle12 .textbox {
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   color: #fff;
+   top: 30%;
+   left: 5%;
+   z-index: 5;
+}
+
+
+.rectangle12 .textbox>p {
+   position: absolute;
+   top: -35%;
+   color: #fff;
+}
+
+
+.rectangle12 .textbox>span {
+   position: absolute;
+   font-size: 16px;
+   top: 45%;
+}
+
+.rectangle13 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 0%;
+   left: 27%;
+   position: absolute;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.rectangle13 img {
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   object-fit: cover;
+}
+
+.rectangle13:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+}
+
+.rectangle13 .textbox {
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   color: #fff;
+   top: 30%;
+   left: 5%;
+   z-index: 5;
+}
+
+
+.rectangle13 .textbox>p {
+   position: absolute;
+   top: -35%;
+   color: #fff;
+}
+
+
+.rectangle13 .textbox>span {
+   position: absolute;
+   font-size: 16px;
+   top: 45%;
+   color: #fff;
+}
+
+.rectangle14 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 27%;
+   position: absolute;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle14:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+.rectangle14 img {
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   object-fit: cover;
+}
+
+
+.rectangle14 .textbox {
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   color: #fff;
+   top: 30%;
+   left: 5%;
+   z-index: 5;
+}
+
+
+.rectangle14 .textbox>p {
+   position: absolute;
+   top: -35%;
+   color: #fff;
+}
+
+
+.rectangle14 .textbox>span {
+   position: absolute;
+   font-size: 16px;
+   top: 45%;
+}
+
+
+.rectangle15 {
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 3.3%;
+   position: absolute;
+}
+
+.rectangle15>span {
+   font-size: 27px;
+   font-weight: bold;
+   position: absolute;
+   top: 30%;
+   left: 3%;
+
+}
+
+
+
+/* section4 */
+.news {
+   width: 100%;
+   height: 20%;
+   position: relative;
+   margin-top: -12%;
+
+}
+
+.news .rectangle17 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #000;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.rectangle16 {
+   background-color: #fff;
+   width: 23.2%;
+   height: 35%;
+
+   top: 0%;
+   left: 51%;
+   position: absolute;
+   overflow: hidden;
+}
+
+.rectangle16 span {
+   font-size: 27px;
+   font-weight: bold;
+   position: absolute;
+   top: 38%;
+   left: 3%;
+}
+
+.news .rectangle16 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #000;
+   font-weight: bold;
+   padding: 10px;
+
+}
+
+.rectangle17 {
+   background-color: #d9d9d9;
+   height: 35%;
+   width: 23.2%;
+
+   top: 0%;
+   left: 3.3%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle17 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.rectangle18 {
+   height: 35%;
+   width: 23.2%;
+
+   top: 0%;
+   left: 27%;
+   position: absolute;
+   overflow: hidden;
+}
+
+.rectangle19 {
+   background-color: #d9d9d9;
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 27%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle19 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.news .rectangle19 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.rectangle20 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 3.3%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news .rectangle20 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.rectangle20 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rectangle21 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 0%;
+   left: 75%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle21 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+
+
+.news .rectangle21 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #000;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.rectangle22 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 75%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.news .rectangle22 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.rectangle22 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rectangle23 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 51%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.news .rectangle23 span {
+
+   position: absolute;
+   bottom: 10%;
+   color: #fff;
+   font-weight: bold;
+   padding: 15px;
+}
+
+.rectangle23 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rectangle17:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+.rectangle19:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+.rectangle20:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+
+.rectangle21:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+.rectangle22:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+.rectangle23:hover img {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+.rectangle23:hover span {
+   transform: scale(1.1);
+   transition: 1s;
+
+}
+
+
+/* sns&recipe */
+
+.sns {
+   width: 100%;
+   height: 20%;
+   position: relative;
+   margin-top: -12%;
+}
+
+.sns h1:nth-child(1) {
+   position: absolute;
+   left: 3.3%;
+   top: -1%;
+}
+
+.sns h1:nth-child(2) {
+   position: absolute;
+   left: 50.3%;
+   top: -1%;
+}
+
+.rectangle26 img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+
+.rectangle26 {
+   height: 35%;
+   width: 23.2%;
+
+   top: 0%;
+   left: 27%;
+   position: absolute;
+   overflow: hidden;
+}
+
+
+.rectangle27 {
+   height: 35%;
+   width: 23.2%;
+
+   top: 5%;
+   left: 27%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle27 img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.rectangle28 {
+   height: 35%;
+   width: 23.2%;
+
+   top: 5%;
+   left: 3.3%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.rectangle28 img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.rectangle29 {
+   height: 35%;
+   width: 23.2%;
+
+   top: 5%;
+   left: 51%;
+   position: absolute;
+   overflow: hidden;
+}
+
+.rectangle29 img {
+   width: 100%;
+   height: 100%;
+}
+
+.rectangle30 {
+   height: 35%;
+   width: 23.2%;
+   top: 5%;
+   left: 75%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.rectangle30 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rectangle31 {
+   background-color: #000;
+   height: 35%;
+   width: 23.2%;
+
+   top: 36%;
+   left: 51%;
+   position: absolute;
+   overflow: hidden;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.rectangle31 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.rectangle31:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+.rectangle28:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+.rectangle30:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+
+.rectangle29:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+
+
+.rectangle27:hover img {
+   transform: scale(1.2);
+   transition: 1s;
+
+}
+
+
+
+/* footer */
+
+footer {
+   width: 100%;
+   height: 5%;
+   position: relative;
+   overflow: hidden;
+}
+
+.footerbox {
+   width: 96%;
+   height: 500px;
+   border-top: 1px solid black;
+   position: relative;
+
+}
+
+.footerlogo {
+   width: 200px;
+   height: 50px;
+   background-image: url(../images/f_logo.PNG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   left: 3.3%;
+   top: 10%;
+}
+
+.sitemep {
+   width: 50%;
+   height: 100%;
+   position: relative;
+   top: 10%;
+}
+
+.family {
+   width: 20%;
+   height: 80%;
+   position: absolute;
+   left: 10%;
+   line-height: 50px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.family li a {
+   width: fit-content;
+}
+
+.family a:hover {
+   border-bottom: 1px solid#000;
+}
+
+.family>ul>li:nth-of-type(1) {
+   font-size: 1.3em;
+}
+
+.every {
+   width: 23%;
+   height: 80%;
+   line-height: 50px;
+   position: absolute;
+   left: 30%;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+
+.every li a {
+   width: fit-content;
+}
+
+.every a:hover {
+   border-bottom: 1px solid#000;
+}
+
+.every>ul>li:nth-of-type(1) {
+   font-size: 1.3em;
+}
+
+.service {
+   width: 20%;
+   height: 80%;
+   position: absolute;
+   left: 55%;
+   line-height: 50px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.service li a {
+   width: fit-content;
+}
+
+.service a:hover {
+   border-bottom: 1px solid#000;
+}
+
+.service>ul>li:nth-of-type(1) {
+   font-size: 1.3em;
+}
+
+
+aside {
+   width: 20%;
+   height: 100%;
+   position: absolute;
+   right: 3.3%;
+   top: 10%;
+}
+
+.phone {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+
+.phone p {
+   font-size: 1.1em;
+   font-weight: bold;
+   line-height: 40px;
+}
+
+.phone span {
+   font-weight: bold;
+}
+
+.phone span:nth-last-child(1) {
+   position: absolute;
+   bottom: 60%;
+   left: 0;
+   font-weight: normal;
+}

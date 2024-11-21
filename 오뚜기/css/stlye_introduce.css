@@ -1,0 +1,692 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: 'SBAggroB';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+
+   margin: 0 auto;
+   padding: 0;
+   list-style: none;
+   font-family: "맑은 고딕";
+   color: #333;
+
+}
+
+html,
+body {
+   min-width: 1200px;
+   overflow-x: hidden;
+}
+
+a {
+   text-decoration: none;
+   display: block;
+}
+
+
+
+.wrap {
+   position: relative;
+   background-color: #ffffff;
+   height: 100vh;
+   width: 1890px;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+/* header */
+
+header {
+   width: 100%;
+   height: 3%;
+   position: relative;
+}
+
+
+.rectangle1 {
+   height: 90%;
+   width: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+.menu {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.logo {
+   width: 10%;
+   height: 250%;
+   background-image: url(../images/logo.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   position: absolute;
+   left: 3.3%;
+   top: 150%;
+   
+}
+
+.logo a{
+   width: 500%;
+   height: 100%;
+}
+
+.gnb {
+   width: 70%;
+   height: 100%;
+   position: absolute;
+
+   left: 15%;
+}
+
+.gnb>li {
+   float: left;
+   width: 15%;
+   height: 100%;
+}
+
+.gnb>li>a {
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 150px;
+}
+
+.submenu {
+   visibility: hidden;
+   /* 기본 숨김 상태 */
+   opacity: 0;
+   transition: opacity 0.5s ease;
+   position: absolute;
+   background-color: #fff;
+   padding: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   top: 380%;
+}
+
+.gnb li:hover .submenu {
+   visibility: visible;
+   /* 호버 시 보이도록 설정 */
+   opacity: 1;
+}
+
+.submenu>li {
+   width: 100%;
+   height: 30%;
+   text-align: center;
+   padding: 10px 0px;
+   opacity: 0.7;
+
+}
+
+
+
+.submenu>li>a {
+   width: 180px;
+   font-weight: 600;
+}
+
+.submenu>li:hover a {
+   opacity: 1;
+   color: red;
+}
+
+.asidemenu {
+   width: 20%;
+   height: 100%;
+   position: absolute;
+   right: 3%;
+   top: 10%;
+}
+
+.asidemenu i {
+   font-size: 1.5em;
+   cursor: pointer;
+}
+
+.asidemenu i:nth-child(1) {
+   position: absolute;
+   left: 5%;
+   top: 220%;
+   color: red;
+}
+
+.asidemenu i:nth-child(2) {
+   position: absolute;
+   left: 20%;
+   top: 200%;
+   font-size: 2em;
+   color: red;
+}
+
+
+.asidemenu i:nth-child(3) {
+   position: absolute;
+   left: 35%;
+   top: 210%;
+   font-size: 1.7em;
+   color: red;
+}
+
+/* main */
+
+main {
+   width: 100%;
+   height: 100vh;
+   background-color: red;
+   position: relative;
+   top: 10%;
+}
+
+.sorce1 {
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff;
+   position: relative;
+}
+
+
+.introduce1 {
+   width: 40%;
+   height: 60%;
+   background-color: #000;
+   position: absolute;
+   left: 5%;
+   top: 35%;
+   text-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.introduce1 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.7;
+}
+
+.introduce1 .textbox {
+   width: 70%;
+   position: absolute;
+   left: 10%;
+   top: 10%;
+
+}
+
+.introduce1 .textbox h1 {
+   color: #fff;
+   font-size: 2em;
+   font-family: '맑은고딕';
+   padding: 10px 0;
+}
+
+.introduce1 .textbox p {
+   color: #fff;
+   font-size: 16px;
+   font-family: '맑은고딕';
+   line-height: 25px;
+}
+
+.introduce1 i {
+   font-size: 3em;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: yellow;
+   z-index: 2;
+}
+
+.introduce1 i:hover {
+   transform: translateX(10px);
+   transition: 0.4s;
+}
+
+.introduce2 {
+   width: 40%;
+   height: 60%;
+   background-color: #000;
+   position: absolute;
+   left: 50%;
+   top: 35%;
+   text-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.introduce2 img {
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;
+   object-fit: cover;
+   z-index: 1;
+}
+
+
+.introduce2 .textbox {
+   width: 70%;
+   position: absolute;
+   left: 10%;
+   top: 10%;
+   z-index: 2;
+}
+
+.introduce2 .textbox h1 {
+   color: #fff;
+   font-size: 2em;
+   font-family: '맑은고딕';
+   padding: 10px 0;
+}
+
+.introduce2 .textbox p {
+   color: #fff;
+   font-size: 16px;
+   font-family: '맑은고딕';
+   line-height: 25px;
+}
+
+.introduce2 i {
+   font-size: 3em;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: yellow;
+   z-index: 2;
+}
+
+.introduce2 i:hover {
+   transform: translateX(10px);
+   transition: 0.4s;
+}
+
+.introduce3 {
+   width: 85%;
+   height: 30%;
+   position: absolute;
+   left: 5%;
+   background-color: #000;
+   overflow: hidden;
+   z-index: 1;
+   text-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.introduce3 h1 {
+   position: absolute;
+   left: 45%;
+   top: 25%;
+   z-index: 3;
+   color: #fff;
+   font-family: '맑은고딕';
+}
+
+.introduce3 img {
+   width: 100%;
+   height: 300%;
+   object-fit: cover;
+   margin-top: -30%;
+   opacity: 0.7;
+   z-index: 1;
+}
+
+
+
+.source2 {
+   width: 100%;
+   height: 70vh;
+   position: relative;
+}
+
+.source2 i {
+   font-size: 3em;
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: yellow;
+   z-index: 2;
+}
+
+
+.source2 i:hover {
+   transform: translateX(10px);
+   transition: 0.4s;
+}
+
+
+.lap1 img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   opacity: 0.4;
+}
+
+.lap2 img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   opacity: 0.4;
+}
+
+.oner img {
+   object-fit: cover;
+   width: 140%;
+   height: 140%;
+   opacity: 0.4;
+}
+
+.source2 .textbox {
+   position: absolute;
+   z-index: 2;
+}
+
+.textbox h1 {
+   font-size: 1.5em;
+   color: #fff;
+   padding: 20px;
+}
+
+.textbox p {
+   color: #fff;
+   padding: 20px;
+}
+
+.lap1 {
+   width: 30%;
+   height: 50%;
+   position: absolute;
+   left: 5%;
+   margin-top: 2%;
+   background-color: #000;
+}
+
+.lap1:hover {
+   transform: scale(1.1em);
+   transition: 1s;
+}
+
+.lap2 {
+   width: 30%;
+   height: 50%;
+   position: absolute;
+   left: 36%;
+   margin-top: 2%;
+   background-color: #000;
+}
+
+.oner {
+   width: 20%;
+   height: 50%;
+   position: absolute;
+   left: 70%;
+   margin-top: 2%;
+   background-color: #000;
+   overflow: hidden;
+}
+
+/* sub */
+
+.more {
+   width: 100%;
+   height: 50%;
+   position: relative;
+   margin-top: 28%;
+}
+
+.sub {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+
+
+
+.sub img:hover {
+   transform: scale(1.1);
+   transition: 0.2s ease-in;
+   cursor: pointer;
+}
+
+.more .textbox {
+   text-align: center;
+
+}
+
+.more .textbox h1 {
+   color: #000;
+}
+
+
+.interview {
+   width: 30%;
+   height: 50%;
+   position: absolute;
+   left: 5%;
+   margin-top: 2%;
+   background-color: #000;
+   overflow: hidden;
+}
+
+
+
+
+.interview img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+}
+
+
+.sub .interview span {
+   font-size: 2em;
+   position: absolute;
+   z-index: 2;
+   width: 150px;
+   top: 80px;
+   left: 200px;
+   color: #fff;
+   font-size: 'SBAggroB';
+}
+
+
+.maps {
+   width: 20%;
+   height: 50%;
+   position: absolute;
+   left: 70%;
+   margin-top: 2%;
+   background-color: #000;
+   overflow: hidden;
+}
+
+
+.maps img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+}
+
+
+.sub .maps span {
+   font-size: 2em;
+   position: absolute;
+   z-index: 2;
+   width: 150px;
+   top: 80px;
+   left: 120px;
+   color: #fff;
+   font-size: 'SBAggroB';
+}
+
+.globalot {
+   width: 33%;
+   height: 50%;
+   position: absolute;
+   left: 36%;
+   margin-top: 2%;
+   background-color: #000;
+   overflow: hidden;
+}
+
+
+.globalot img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+}
+
+.sub .globalot span {
+   font-size: 2em;
+   position: absolute;
+   z-index: 2;
+   width: 150px;
+   top: 60px;
+   left: 250px;
+   color: #fff;
+   font-size: 'SBAggroB';
+}
+
+/* footer */
+
+footer {
+   width: 100%;
+   height: 40%;
+   position: relative;
+   overflow: hidden;
+   margin-top: 2%;
+}
+
+.footerbox {
+   width: 96%;
+   height: 500px;
+   border-top: 1px solid black;
+   position: relative;
+
+}
+
+.footerlogo {
+   width: 200px;
+   height: 50px;
+   background-image: url(../images/f_logo.PNG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   left: 3.3%;
+   top: 10%;
+}
+
+.sitemep {
+   width: 50%;
+   height: 100%;
+   position: relative;
+   top: 10%;
+}
+
+.family {
+   width: 20%;
+   height: 80%;
+   position: absolute;
+   left: 10%;
+   line-height: 50px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.family li a {
+   width: fit-content;
+}
+
+.family a:hover {
+   border-bottom: 1px solid#000;
+}
+
+.family>ul>li:nth-of-type(1) {
+   font-size: 1.3em;
+}
+
+.every {
+   width: 23%;
+   height: 80%;
+   line-height: 50px;
+   position: absolute;
+   left: 30%;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+
+.every li a {
+   width: fit-content;
+}
+
+.every a:hover {
+   border-bottom: 1px solid#000;
+}
+
+.every>ul>li:nth-of-type(1) {
+   font-size: 1.3em;
+}
+
+.service {
+   width: 20%;
+   height: 80%;
+   position: absolute;
+   left: 55%;
+   line-height: 50px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.service li a {
+   width: fit-content;
+}
+
+.service a:hover {
+   border-bottom: 1px solid#000;
+}
+
+.service>ul>li:nth-of-type(1) {
+   font-size: 1.3em;
+}
+
+
+aside {
+   width: 20%;
+   height: 100%;
+   position: absolute;
+   right: 3.3%;
+   top: 10%;
+}
+
+.phone {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+
+.phone p {
+   font-size: 1.1em;
+   font-weight: bold;
+   line-height: 40px;
+}
+
+.phone span {
+   font-weight: bold;
+}
+
+.phone span:nth-last-child(1) {
+   position: absolute;
+   bottom: 60%;
+   left: 0;
+   font-weight: normal;
+}
